@@ -1,9 +1,11 @@
 import './App.css';
+import UsersListing from './components/UserListing';
 
 function App() {
   return (
     <div className="App">
-      <h2>App component</h2>
+      {/* <div className='spinner'></div> */}
+      <UsersListing />
     </div>
   );
 }
