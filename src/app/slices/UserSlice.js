@@ -9,7 +9,7 @@ const UserSlice = createSlice({
         },
         updateUser:(state,{payload})=>{
             const index = state.findIndex((user, i)=> user.id == payload.id );
-            const user ={...state[index],...payload};
+            const user ={...payload};
             console.log("user",user);
             const arr = [...state]
             arr.splice(index,1,user);
